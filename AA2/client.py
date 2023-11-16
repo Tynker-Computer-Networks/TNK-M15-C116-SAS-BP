@@ -118,7 +118,7 @@ def move_player(steps, color):
         
 def handle_win(message):
     global wining_message
-    if 'red' in message:
+    if 'Player1' in message:
         color = 'red'
     else:
         color = 'yellow'
@@ -127,7 +127,7 @@ def handle_win(message):
 
 def update_score(message):
     global canvas2, player1_score, player2_score, player1_score_label, player2_score_label, roll_button
-    if('red' in message):
+    if('Player1' in message):
         player1_score +=1
         roll_button.destroy()
     else:
