@@ -116,7 +116,7 @@ def move_player(steps, color):
         
 def handle_win(message):
     global wining_message
-    if 'red' in message:
+    if 'Player1' in message:
         color = 'red'
     else:
         color = 'yellow'
@@ -127,7 +127,7 @@ def update_score(message):
     # Access canvas2, variable storing the score and the score labels as global variables
     
 
-    # Check if 'red' exits in the message then update score of player1 otherwise of player2
+    # Check if 'Player1' exits in the message then update score of player1 otherwise of player2
     
     
 
